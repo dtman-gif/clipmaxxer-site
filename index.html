@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>clipmaxxer</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; line-height: 1.55; color: #222; }
+      h1 { margin-top: 0; } h2 { margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+      nav a { margin-right: 16px; }
+      code { background: #f4f4f4; padding: 1px 6px; border-radius: 3px; }
+      section { scroll-margin-top: 24px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>clipmaxxer</h1>
+      <p>Personal tool that turns livestream VODs into short-form clips and posts them to the creator's own TikTok Drafts inbox for manual publishing.</p>
+      <nav><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#contact">Contact</a></nav>
+    </header>
+
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+      <p><em>Last updated: April 2026</em></p>
+      <p>clipmaxxer is a self-hosted personal tool. When you connect your TikTok account, clipmaxxer stores the OAuth access token and open_id locally on the device running the tool so it can upload clips to
+  your own Drafts inbox on your behalf.</p>
+      <h3>What we collect</h3>
+      <ul>
+        <li>Your TikTok <code>open_id</code> and <code>access_token</code> (stored only on your own machine; never transmitted elsewhere).</li>
+        <li>Metadata about clips you generate: captions, timestamps, virality scores — stored locally in a SQLite database.</li>
+      </ul>
+      <h3>What we don't collect</h3>
+      <ul>
+        <li>We never send your TikTok credentials to any third party.</li>
+        <li>We never collect analytics about you or your viewers.</li>
+        <li>We do not sell or share any data.</li>
+      </ul>
+      <h3>Deleting your data</h3>
+      <p>Revoke the app's access at <a href="https://www.tiktok.com/setting/apps">tiktok.com/setting/apps</a> and delete the local <code>.tiktok_tokens.json</code> file to remove all stored credentials.</p>
+    </section>
+
+    <section id="terms">
+      <h2>Terms of Service</h2>
+      <p><em>Last updated: April 2026</em></p>
+      <p>clipmaxxer is provided as-is, for personal use, with no warranty. By using it you agree to:</p>
+      <ul>
+        <li>Only clip and publish content you own or have rights to.</li>
+        <li>Comply with TikTok's Community Guidelines and Terms of Service in everything you publish through the tool.</li>
+        <li>Accept that clipmaxxer makes no guarantees about uptime, correctness, or content quality.</li>
+      </ul>
+      <p>The tool is open for personal use. The operator (you) is solely responsible for the content posted to your TikTok account.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>For questions or data-deletion requests, open an issue on the project's GitHub repository.</p>
+    </section>
+  </body>
+  </html>
